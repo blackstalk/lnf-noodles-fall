@@ -61,6 +61,7 @@ $ yarn
 Use Node.js scripts to run build tools.
 
 * `$ yarn dev` - Launches webpack-dev-server and recompiles files whenever they change
+* `$ yarn run watch` - Whatch changes
 * `$ yarn build` - Creates production ready code
 
 After running `` $ yarn dev `` or `` $ yarn build ``, your deploy-ready code will be taken from the ``./src/`` directory and placed within the ``./web/build/`` and ``./templates/`` directories respectively.
