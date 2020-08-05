@@ -1,0 +1,13 @@
+{% extends "_layout" %}
+
+{% block main %}
+
+{% if entry.type.handle == 'productCategories' %}
+    {% include '/_products/categoriesList.twig' %}
+{% elseif entry.type.handle == 'productList' %}
+    {% include '/_products/productList.twig' %}
+{% elseif entry.type.handle == 'productSingle' %}
+    {% include '/_products/productSingle.twig' %}
+{% endif %}
+
+{% endblock %}

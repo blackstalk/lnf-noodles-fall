@@ -20,30 +20,18 @@
 {% extends "_layout" %}
 {% block main %}
 	<section>
-			<div class="container">
-				<div class="center">
+		<div class="container">
+			<div class="center">
 
-					<h1 class="apple">Skedular</h1>
-					<h2 class="fw1 f3 white-80 mt3 mb4">A post-pandemic scheduling tool for businesses and organizations to manage reservations and help them keep from overbooking.</h2>
-					<logo style="display:none"></logo>
-					<a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-app-green" href="/app">Find an Organization</a>
-					{% if currentUser %}
-          {% else %}
-          <span class="dib v-mid ph3 white-70 mb3">or</span>
-					<a class="f6 grow no-underline br-pill white ba b--white ph3 pv2 mb3" href="/sign-up">Sign Up</a>
-          {% endif %}
-          {# {{ entry.body }} #}
+				<h1 class="apple">{{ currentSite.name }}</h1>
+				<h2 class="fw1 f3 white-80 mt3 mb4">This test site is an example for Riviana Craft sites to define a content model that will work with our SEO recommendations.</h2>
+				<logo style="display:none"></logo>
+				<a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-app-green" href="/recipes">Recipes</a>
+				<span class="dib v-mid ph3 white-70 mb3">or</span>
+				{% set entries = craft.entries.section('productCategories').level('1') %}
+				<a class="f6 grow no-underline br-pill white ba b--white ph3 pv2 mb3" href="{{ entries.first().slug }}">Products</a>
 
-					{# <h2>All Organizations</h2>
-					<ul>
-						{% for entry in craft.entries.section('schedules').limit(5).all() %}
-							<li>
-								<a href="{{ entry.url }}">{{ entry.title }}</a>
-							</li>
-						{% endfor %}
-					</ul> #}
-
-				</div>
 			</div>
+		</div>
 	</section>
 {% endblock %}

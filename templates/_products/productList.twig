@@ -1,0 +1,26 @@
+{% extends "_layout" %}
+
+{% block main %}
+
+{% set parentLevel1 = ( entry.parent.parent ) ? '<a href="' ~ entry.parent.parent.url ~ '">' ~ entry.parent.parent.title ~ '</a> / ' %}
+{% set parentLevel2 = ( entry.parent ) ? '<a href="' ~ entry.parent.url ~ '">' ~ entry.parent.title ~ '</a> / ' %}
+<small>
+    {{ (parentLevel1 is not empty) ? parentLevel1|raw }}
+    {{ (parentLevel2 is not empty) ? parentLevel2|raw }}
+    {{ entry.title }}
+</small>
+
+<h1>{{ entry.title }} (Product List)</h1>
+
+<article class="cf">
+{% set children = entry.children %}
+{% for child in children %}
+  <a href="{{ child.url }}" class="fl w-50 bg-near-white tc">
+    <figure><img src="https://dummyimage.com/600x400/b8b8b8/ffffff&text=Product+Image"/></figure>
+    
+    <h1>{{ child.title }}</h1>
+  </a>
+{% endfor %}
+</article>
+
+{% endblock %}

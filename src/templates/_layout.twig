@@ -34,7 +34,7 @@
 		{# {% hook 'seomaticRender' %} #}
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css" integrity="sha256-9imRszwBuS30D+LpkdIYNYpcgU5lDinHqIqkR0X6fSc=" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-
+		<linkv rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
 		<link rel="home" href="{{ siteUrl }}" />
 
@@ -55,10 +55,6 @@
 
 	</head>
 	<body>
-
-	{% set currentTimezoneDynamic = globals.defaultTimezone %}
-
-	{% do setCookie('storedTimeZone', currentTimezoneDynamic, now | date_modify("+1 hour").timestamp) %}
 
 		<div id="app" class="{% if currentUser %}logged-in{% endif %}">
 

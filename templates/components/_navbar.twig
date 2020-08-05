@@ -1,14 +1,9 @@
-{% if currentUser %}
 <div class="menu-trigger"></div>
-{% endif %}
 <div class="nav-bar">
-	<h1 class="apple"><a href="/">Skedular</a></h1>
+	<h1 class="apple"><a href="/">{{ currentSite.name }}</a></h1>
 	<div class="nav-bar--session">
-		{% if currentUser %}
-			<a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-app-green" href="{{ logoutUrl }}">Logout</a>
-		{% else %}
-			<a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-app-green" href="{{ loginUrl }}">Login</a>
-			<a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-app-green" href="/sign-up">Sign Up</a>
-		{% endif %}
+		<a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-app-green" href="/recipes">Recipes</a>
+		{% set entries = craft.entries.section('productCategories').level('1') %}
+		<a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-app-green" href="{{ entries.first().slug }}">Products</a>
 	</div>
 </div>

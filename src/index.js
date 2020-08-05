@@ -44,6 +44,12 @@ new Vue({
         }
 
       }).call(this);
+    },
+    buttonWaiting(e){
+      console.log('button clicked');
+      let thisButton = e.target;
+      thisButton.innerHTML = '<i class="zmdi zmdi-chart-donut rotating"></i>';
+      //thisButton.setAttribute('disabled','disabled');
     }
   }
 })
