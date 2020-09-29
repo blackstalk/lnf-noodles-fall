@@ -1,4 +1,4 @@
-dateModified: 1601081270
+dateModified: 1601411027
 email:
   fromEmail: philipp@rppld.co
   fromName: 'Craft CMS Project Starter'
@@ -355,6 +355,24 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  661a47a8-a734-4f38-a2a8-ac73619e7f83:
+    contentColumnType: text
+    fieldGroup: e8fe68a9-4955-4f24-9534-cb4f8182de5c
+    handle: productUrl
+    instructions: ''
+    name: 'Product URL'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   77913185-cb6d-4a18-8567-b6d8fdac7d18:
     contentColumnType: text
     fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
@@ -931,6 +949,9 @@ sections:
             tabs:
               -
                 fields:
+                  661a47a8-a734-4f38-a2a8-ac73619e7f83:
+                    required: false
+                    sortOrder: 3
                   a2821172-0c74-4a17-a46c-e4d2d02ddcc4:
                     required: false
                     sortOrder: 1
@@ -1035,7 +1056,10 @@ sections:
         hasUrls: true
         template: _recipes/single-recipe
         uriFormat: 'recipes/{slug}'
-    type: channel
+    structure:
+      maxLevels: null
+      uid: e41f5d5b-d33a-47f5-980e-41b8feb70264
+    type: structure
   540d7d7f-a6bb-4d10-a178-9296fdd989d5:
     enableVersioning: true
     entryTypes:
