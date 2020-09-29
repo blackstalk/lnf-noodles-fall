@@ -1,4 +1,4 @@
-dateModified: 1592273341
+dateModified: 1601081270
 email:
   fromEmail: philipp@rppld.co
   fromName: 'Craft CMS Project Starter'
@@ -6,36 +6,24 @@ email:
   transportSettings: null
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  3bf9bee7-404d-447d-b60a-9a3fc8a4194c:
+    name: 'Landing Page'
+  ad07ebe9-076c-45fc-905a-ce7123e08282:
+    name: Global
+  e8fe68a9-4955-4f24-9534-cb4f8182de5c:
+    name: Products
+  f5d2f46e-65de-498b-b8cd-03575e8f7fc6:
+    name: Recipes
   f63ad89a-254d-4d4b-86c6-d73a3e689519:
     name: Default
 fields:
-  22e37ada-af96-47e3-aa48-53d0568dfcc1:
+  0094ea33-daa9-4ed9-8b97-93604f1f2205:
     contentColumnType: string
     fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
-    handle: productSingle
+    handle: heroTexture2
     instructions: ''
-    name: 'Product Single'
-    searchable: true
-    settings:
-      limit: '1'
-      localizeRelations: false
-      selectionLabel: 'Select a Product'
-      source: null
-      sources:
-        - 'section:376da652-b41f-4adf-9d5d-4b416105bb31'
-      targetSiteId: null
-      validateRelatedElements: ''
-      viewMode: null
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Entries
-  a09dd241-1432-41cb-bd3e-3c29082d1d90:
-    contentColumnType: string
-    fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
-    handle: categoryImage
-    instructions: ''
-    name: 'Category Image'
-    searchable: true
+    name: 'Hero Texture 2'
+    searchable: false
     settings:
       allowedKinds: null
       defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
@@ -43,7 +31,7 @@ fields:
       limit: '1'
       localizeRelations: false
       restrictFiles: ''
-      selectionLabel: 'Add an Image'
+      selectionLabel: ''
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
@@ -57,26 +45,707 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  b31d50e1-4f27-4676-8fdd-afa39b3baa27:
+  0b5e49e9-572c-4378-bc24-61d62b0605a2:
     contentColumnType: string
-    fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
-    handle: productList
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: fpoProductImage
     instructions: ''
-    name: 'Product List'
+    name: 'Product Info Product Image'
     searchable: true
     settings:
-      limit: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
       localizeRelations: false
-      selectionLabel: 'Add a product'
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  0fc784f9-3a26-4915-8ff9-c38269d4a1cf:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: fpoCopy
+    instructions: ''
+    name: 'Product Info Copy'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  1be1dc28-14ee-4ac2-828c-0fdc8515de23:
+    contentColumnType: string
+    fieldGroup: ad07ebe9-076c-45fc-905a-ce7123e08282
+    handle: yellowBg
+    instructions: ''
+    name: 'Yellow BG'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  2237be7d-2656-45f3-b301-7909d36f3a97:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: fpoTitle
+    instructions: ''
+    name: 'Product Info Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2fe16756-7260-4dc3-8881-55a930bcc7a7:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: totalTime
+    instructions: ''
+    name: 'Total Time'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  315ff1dc-4d9e-443e-ac09-5ce7296db85c:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: recipeTip
+    instructions: ''
+    name: 'Recipe Tip'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  33e26d6a-1248-4cda-b2f7-2304d89fe202:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: footerCtaText
+    instructions: ''
+    name: 'Footer CTA Text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  42fb8630-948e-49d4-9f37-dcb6bc3df0f6:
+    contentColumnType: string
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: heroProductImage
+    instructions: ''
+    name: 'Hero Product Image'
+    searchable: false
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  48ed57d9-51d4-4f7a-8d63-51cc31f4bd82:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: recipeDescription
+    instructions: ''
+    name: 'Recipe Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  49863cc5-e27f-4be9-ba91-d57e1353fa31:
+    contentColumnType: string
+    fieldGroup: ad07ebe9-076c-45fc-905a-ce7123e08282
+    handle: logo
+    instructions: ''
+    name: Logo
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Add an image'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  49fb01a8-3553-450b-adee-f392ff92b973:
+    contentColumnType: string
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: footerLogo
+    instructions: ''
+    name: 'Footer Logo'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  5281fd05-027f-4cfa-8b70-12b5759309d2:
+    contentColumnType: string
+    fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
+    handle: headerBarSupportingImage
+    instructions: ''
+    name: 'Header Bar Supporting Image'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  534ca0ea-26ca-4bc3-a2c5-3baa796f8b3a:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: productsSectionCopy
+    instructions: ''
+    name: 'Products Section Copy'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  77913185-cb6d-4a18-8567-b6d8fdac7d18:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: heroTopParagraph
+    instructions: ''
+    name: 'Hero Top Paragraph'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  85d2dd3a-292c-4ae2-af02-a4dd0b8574e9:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: prepTime
+    instructions: ''
+    name: 'Prep Time'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8fc2912c-4ed2-473a-af37-2f82b61454f6:
+    contentColumnType: string(255)
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: footerCtaLink
+    instructions: ''
+    name: 'Footer CTA Link'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  978a314b-261b-44a3-911e-f450c6ac08e9:
+    contentColumnType: string
+    fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
+    handle: iconImage
+    instructions: ''
+    name: 'Icon Image'
+    searchable: false
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  9a752cda-606c-4125-928f-c796c74532c1:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: instructions
+    instructions: ''
+    name: Instructions
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  9c1cedf3-a0f2-4c82-9a38-25167f51b22a:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: fpoSuperTitle
+    instructions: ''
+    name: 'Product Info Super Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9c9a080c-69ac-4fa4-83ff-9527ffc6af0a:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: productsSectionTitle
+    instructions: ''
+    name: 'Products Section Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a2821172-0c74-4a17-a46c-e4d2d02ddcc4:
+    contentColumnType: string
+    fieldGroup: e8fe68a9-4955-4f24-9534-cb4f8182de5c
+    handle: productImage
+    instructions: ''
+    name: 'Product Image'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  a91f0178-2a83-4b79-9de2-44cdf3b536fc:
+    contentColumnType: string
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: recipeImage
+    instructions: ''
+    name: 'Recipe Image'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  b1885e5a-cb0f-44de-be13-1df863069c82:
+    contentColumnType: string
+    fieldGroup: ad07ebe9-076c-45fc-905a-ce7123e08282
+    handle: darkBackgroundImage
+    instructions: ''
+    name: 'Dark Background Image'
+    searchable: false
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  b7a46f15-fd84-4e5f-8e9f-e44589fad41f:
+    contentColumnType: text
+    fieldGroup: e8fe68a9-4955-4f24-9534-cb4f8182de5c
+    handle: productDescription
+    instructions: ''
+    name: 'Product Description'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  c652fd75-0e7f-4077-b9a8-bda5f6a37bb0:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: servings
+    instructions: ''
+    name: Servings
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c8618120-5547-47b5-9468-efd9595fff3b:
+    contentColumnType: string
+    fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
+    handle: heroTexture
+    instructions: ''
+    name: 'Hero Texture'
+    searchable: false
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  cb44ca5a-f599-414e-a0c3-b0519d343279:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: cookTime
+    instructions: ''
+    name: 'Cook Time'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ccd0b544-30ff-4baf-ac19-aad161d38207:
+    contentColumnType: text
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: ingredients
+    instructions: ''
+    name: Ingredients
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  d7d8fb6c-b3fe-41dd-9052-f656aa78f9d3:
+    contentColumnType: text
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: heroBottomParagraph
+    instructions: ''
+    name: 'Hero Bottom Paragraph'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  dbd1ef90-ec57-41f1-ad56-e89902bd2cf8:
+    contentColumnType: string
+    fieldGroup: f5d2f46e-65de-498b-b8cd-03575e8f7fc6
+    handle: relatedProduct
+    instructions: ''
+    name: 'Related Product'
+    searchable: false
+    settings:
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
       source: null
       sources:
-        - 'section:376da652-b41f-4adf-9d5d-4b416105bb31'
+        - 'section:2732950c-bc00-48e2-a625-59da3eb27f85'
       targetSiteId: null
       validateRelatedElements: ''
       viewMode: null
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  dc8d8e7f-cdc0-4e04-9b77-215889923d90:
+    contentColumnType: string(255)
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: fpoButtonLink
+    instructions: ''
+    name: 'Product Info Button Link'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   dd939d7d-5ef4-4d06-8d9f-8fa1315e0721:
     contentColumnType: text
     fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
@@ -97,6 +766,138 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  e65d1b23-7a1c-4b30-87eb-c5c21bb945e1:
+    contentColumnType: string
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: footerBackground
+    instructions: ''
+    name: 'Footer Background'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  e8e7eacb-32ee-4064-83bb-155c213c2bea:
+    contentColumnType: string
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: heroDishImage
+    instructions: ''
+    name: 'Hero Dish Image'
+    searchable: false
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  ed1c2236-d2a7-42c3-b627-f1c27ad44efd:
+    contentColumnType: string
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: fpoButtonBg
+    instructions: ''
+    name: 'Button BG'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  ee6df49b-a77b-4d30-9e00-3aa37b7afdca:
+    contentColumnType: string
+    fieldGroup: 3bf9bee7-404d-447d-b60a-9a3fc8a4194c
+    handle: heroHeadingImage
+    instructions: ''
+    name: 'Hero Heading Image'
+    searchable: false
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:62e59e02-40ad-4e3b-b574-4059ccb41e80'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+globalSets:
+  c48b8efc-8c77-46c8-9056-46a8f1d4539b:
+    fieldLayouts:
+      e37ea0b8-8e65-4843-9c97-f3200ef8e920:
+        tabs:
+          -
+            fields:
+              1be1dc28-14ee-4ac2-828c-0fdc8515de23:
+                required: false
+                sortOrder: 3
+              49863cc5-e27f-4be9-ba91-d57e1353fa31:
+                required: false
+                sortOrder: 1
+              b1885e5a-cb0f-44de-be13-1df863069c82:
+                required: false
+                sortOrder: 2
+            name: Identity
+            sortOrder: 1
+    handle: globals
+    name: Globals
 plugins:
   cookies:
     edition: standard
@@ -121,15 +922,28 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
 sections:
-  376da652-b41f-4adf-9d5d-4b416105bb31:
+  2732950c-bc00-48e2-a625-59da3eb27f85:
     enableVersioning: true
     entryTypes:
-      3f2cff5c-fba1-422e-ac58-124ae75eeada:
+      1f8f5762-b64c-4dcf-82d3-a66a911ee2de:
+        fieldLayouts:
+          0d004915-3357-414f-b2c6-a44f10cf2f0e:
+            tabs:
+              -
+                fields:
+                  a2821172-0c74-4a17-a46c-e4d2d02ddcc4:
+                    required: false
+                    sortOrder: 1
+                  b7a46f15-fd84-4e5f-8e9f-e44589fad41f:
+                    required: false
+                    sortOrder: 2
+                name: Product
+                sortOrder: 1
         handle: products
         hasTitleField: true
         name: Products
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Title
     handle: products
     name: Products
@@ -151,98 +965,57 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: ''
-        uriFormat: 'product/{slug}'
+        uriFormat: 'products/{slug}'
     type: channel
-  540d7d7f-a6bb-4d10-a178-9296fdd989d5:
+  3d52081f-b20c-489a-bc4d-638ae82b0dbf:
     enableVersioning: true
     entryTypes:
-      7f4690cd-0a2d-4e87-8809-f40b3be31ffe:
+      c704ec84-2fc9-4e3d-901e-32b37a761109:
         fieldLayouts:
-          d8ddc405-cd8f-4b50-9b1e-14f08874e114:
+          28c5b226-809f-42c5-8cab-44dfd24a3ac6:
             tabs:
               -
                 fields:
-                  dd939d7d-5ef4-4d06-8d9f-8fa1315e0721:
+                  2fe16756-7260-4dc3-8881-55a930bcc7a7:
+                    required: false
+                    sortOrder: 5
+                  315ff1dc-4d9e-443e-ac09-5ce7296db85c:
+                    required: false
+                    sortOrder: 9
+                  48ed57d9-51d4-4f7a-8d63-51cc31f4bd82:
                     required: false
                     sortOrder: 1
-                name: Content
-                sortOrder: 1
-        handle: homepage
-        hasTitleField: false
-        name: Homepage
-        sortOrder: 1
-        titleFormat: '{section.name|raw}'
-        titleLabel: null
-    handle: homepage
-    name: Homepage
-    previewTargets:
-      -
-        label: 'Primary entry page'
-        urlFormat: '{url}'
-    propagationMethod: all
-    siteSettings:
-      aebac91c-fff6-4f09-b5d1-72694fe08a75:
-        enabledByDefault: true
-        hasUrls: true
-        template: index
-        uriFormat: __home__
-    type: single
-  6986f39b-427a-40c4-acc9-039d2d07352f:
-    enableVersioning: true
-    entryTypes:
-      1955ffe8-dd87-49cc-95f8-5d17109656de:
-        fieldLayouts:
-          1d78d3a3-7d5d-4d9c-88a6-7590e93bde77:
-            tabs:
-              -
-                fields:
-                  a09dd241-1432-41cb-bd3e-3c29082d1d90:
+                  85d2dd3a-292c-4ae2-af02-a4dd0b8574e9:
                     required: false
-                    sortOrder: 1
-                name: 'Tab 1'
+                    sortOrder: 3
+                  9a752cda-606c-4125-928f-c796c74532c1:
+                    required: false
+                    sortOrder: 7
+                  a91f0178-2a83-4b79-9de2-44cdf3b536fc:
+                    required: false
+                    sortOrder: 2
+                  c652fd75-0e7f-4077-b9a8-bda5f6a37bb0:
+                    required: false
+                    sortOrder: 6
+                  cb44ca5a-f599-414e-a0c3-b0519d343279:
+                    required: false
+                    sortOrder: 4
+                  ccd0b544-30ff-4baf-ac19-aad161d38207:
+                    required: false
+                    sortOrder: 8
+                  dbd1ef90-ec57-41f1-ad56-e89902bd2cf8:
+                    required: false
+                    sortOrder: 10
+                name: Recipes
                 sortOrder: 1
-        handle: productCategories
+        handle: recipes
         hasTitleField: true
-        name: 'Product Categories'
+        name: Recipes
         sortOrder: 1
         titleFormat: ''
         titleLabel: Title
-      55770925-95b6-4d26-8f5f-0a3077d5dead:
-        fieldLayouts:
-          611a4230-bd16-4319-9089-2ca1b2cce059:
-            tabs:
-              -
-                fields:
-                  22e37ada-af96-47e3-aa48-53d0568dfcc1:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
-        handle: productSingle
-        hasTitleField: true
-        name: 'Product Single'
-        sortOrder: 3
-        titleFormat: ''
-        titleLabel: Title
-      9d2e3acb-afe7-4b70-a3f0-005d0d8bc680:
-        fieldLayouts:
-          8e2301aa-e91d-4315-aa15-19847b342687:
-            tabs:
-              -
-                fields:
-                  b31d50e1-4f27-4676-8fdd-afa39b3baa27:
-                    required: false
-                    sortOrder: 1
-                name: 'Tab 1'
-                sortOrder: 1
-        handle: productList
-        hasTitleField: true
-        name: 'Product List'
-        sortOrder: 2
-        titleFormat: ''
-        titleLabel: Title
-    handle: productCategories
-    name: 'Product Categories'
+    handle: recipes
+    name: Recipes
     previewTargets:
       -
         __assoc__:
@@ -260,29 +1033,143 @@ sections:
       aebac91c-fff6-4f09-b5d1-72694fe08a75:
         enabledByDefault: true
         hasUrls: true
-        template: _products/entry
-        uriFormat: '{% if parent.parent.parent %}{{ parent.parent.parent.slug }}/{% endif %}/{% if parent.parent %}{{ parent.parent.slug }}/{% endif %}{% if parent %}{{ parent.slug }}/{% endif %}{slug}'
-    structure:
-      maxLevels: 4
-      uid: 45de11af-729e-4e0f-be1c-458bd88f0267
-    type: structure
+        template: _recipes/single-recipe
+        uriFormat: 'recipes/{slug}'
+    type: channel
+  540d7d7f-a6bb-4d10-a178-9296fdd989d5:
+    enableVersioning: true
+    entryTypes:
+      7f4690cd-0a2d-4e87-8809-f40b3be31ffe:
+        fieldLayouts:
+          d8ddc405-cd8f-4b50-9b1e-14f08874e114:
+            tabs:
+              -
+                fields:
+                  0094ea33-daa9-4ed9-8b97-93604f1f2205:
+                    required: false
+                    sortOrder: 2
+                  42fb8630-948e-49d4-9f37-dcb6bc3df0f6:
+                    required: false
+                    sortOrder: 5
+                  5281fd05-027f-4cfa-8b70-12b5759309d2:
+                    required: false
+                    sortOrder: 9
+                  77913185-cb6d-4a18-8567-b6d8fdac7d18:
+                    required: false
+                    sortOrder: 6
+                  978a314b-261b-44a3-911e-f450c6ac08e9:
+                    required: false
+                    sortOrder: 8
+                  c8618120-5547-47b5-9468-efd9595fff3b:
+                    required: false
+                    sortOrder: 1
+                  d7d8fb6c-b3fe-41dd-9052-f656aa78f9d3:
+                    required: false
+                    sortOrder: 7
+                  e8e7eacb-32ee-4064-83bb-155c213c2bea:
+                    required: false
+                    sortOrder: 4
+                  ee6df49b-a77b-4d30-9e00-3aa37b7afdca:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+              -
+                name: Recipes
+                sortOrder: 2
+              -
+                fields:
+                  0b5e49e9-572c-4378-bc24-61d62b0605a2:
+                    required: false
+                    sortOrder: 6
+                  0fc784f9-3a26-4915-8ff9-c38269d4a1cf:
+                    required: false
+                    sortOrder: 3
+                  2237be7d-2656-45f3-b301-7909d36f3a97:
+                    required: false
+                    sortOrder: 2
+                  9c1cedf3-a0f2-4c82-9a38-25167f51b22a:
+                    required: false
+                    sortOrder: 1
+                  dc8d8e7f-cdc0-4e04-9b77-215889923d90:
+                    required: false
+                    sortOrder: 4
+                  ed1c2236-d2a7-42c3-b627-f1c27ad44efd:
+                    required: false
+                    sortOrder: 5
+                name: 'Product Info'
+                sortOrder: 3
+              -
+                fields:
+                  534ca0ea-26ca-4bc3-a2c5-3baa796f8b3a:
+                    required: false
+                    sortOrder: 2
+                  9c9a080c-69ac-4fa4-83ff-9527ffc6af0a:
+                    required: false
+                    sortOrder: 1
+                name: Products
+                sortOrder: 4
+              -
+                fields:
+                  33e26d6a-1248-4cda-b2f7-2304d89fe202:
+                    required: false
+                    sortOrder: 1
+                  49fb01a8-3553-450b-adee-f392ff92b973:
+                    required: false
+                    sortOrder: 3
+                  8fc2912c-4ed2-473a-af37-2f82b61454f6:
+                    required: false
+                    sortOrder: 2
+                  e65d1b23-7a1c-4b30-87eb-c5c21bb945e1:
+                    required: false
+                    sortOrder: 4
+                name: Footer
+                sortOrder: 5
+        handle: homepage
+        hasTitleField: false
+        name: Homepage
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: homepage
+    name: Homepage
+    previewTargets:
+      -
+        __assoc__:
+          -
+            - label
+            - 'Primary entry page'
+          -
+            - urlFormat
+            - '{url}'
+          -
+            - refresh
+            - '1'
+    propagationMethod: all
+    siteSettings:
+      aebac91c-fff6-4f09-b5d1-72694fe08a75:
+        enabledByDefault: true
+        hasUrls: true
+        template: index
+        uriFormat: __home__
+    type: single
 siteGroups:
   a0059ff2-95fa-4b45-9b83-d33adaccc6e4:
     name: Default
 sites:
   aebac91c-fff6-4f09-b5d1-72694fe08a75:
-    baseUrl: /
-    handle: default
+    baseUrl: $DEFAULT_SITE_URL
+    handle: lightnfluffy
     hasUrls: true
     language: en
-    name: Ronzoni
+    name: 'Light ''n Fluffy'
     primary: true
     siteGroup: a0059ff2-95fa-4b45-9b83-d33adaccc6e4
     sortOrder: 1
 system:
   edition: pro
   live: true
-  name: Ronzoni
+  name: 'Fall Noodles'
   schemaVersion: 3.4.10
   timeZone: America/Chicago
 users:

@@ -33,7 +33,7 @@ return [
         ],
 
         'preserveImageColorProfiles' => true,
-        'imageDriver' => 'imagick',
+        'imageDriver' => 'gd',
         'generateTransformsBeforePageLoad' => true,
         'autoLoginAfterAccountActivation' => true,
         // Base site URL

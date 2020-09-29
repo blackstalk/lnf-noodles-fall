@@ -7,3 +7,74 @@
   font-weight: 900;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "HickoryJack";
+  src: url("../assets/Fonts/hickory_jack/HickoryJack.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "HickoryJackLight";
+  src: url("../assets/Fonts/hickory_jack/HickoryJackLight.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "MerriweatherBold";
+  src: url("../assets/Fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "MerriweatherHeavy";
+  src: url("../assets/Fonts/Merriweather/Merriweather-Heavy.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "MerriweatherLight";
+  src: url("../assets/Fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanRegular";
+  src: url("../assets/Fonts/Spartan-MB/SpartanMB-Regular.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanSemiBold";
+  src: url("../assets/Fonts/Spartan-MB/SpartanMB-SemiBold.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanThin";
+  src: url("../assets/Fonts/Spartan-MB/SpartanMB-Thin.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanLight";
+  src: url("../assets/Fonts/Spartan-MB/SpartanMB-Light.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanExtraBold";
+  src: url("../assets/Fonts/Spartan-MB/SpartanMB-ExtraBold.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanBold";
+  src: url("../assets/Fonts/Spartan-MB/SpartanMB-Bold.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpartanBlack";
+  src: url("../assets/Fonts/Spartan-MB/SpartanMB-Black.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreyCliffBold";
+  src: url("../assets/Fonts/Greycliff-CF-Bold.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreyCliffRegular";
+  src: url("../assets/Fonts/Greycliff-CF-Regular.otf") format("opentype");
+  font-style: normal;
+}

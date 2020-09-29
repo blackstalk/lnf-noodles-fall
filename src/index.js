@@ -17,40 +17,40 @@ new Vue({
   },
   data: {
     privateState: {},
-    sharedState: s.state
+    sharedState: s.state,
+    heroReadMoreBtn: document.querySelector('.hero-read-more'),
   },
   mounted() {
     console.log('mounted');
-    this.navFunctions();
   },
   methods: {
-    fadeToggle(el){
-      if (el.classList.contains('is-paused')){
-        el.classList.remove('is-paused')
+    toggleHeroCopy(){
+      let button = document.querySelector('.hero-read-more');
+      let container = document.querySelector('.toggle-container');
+      if (!container.classList.contains('active')) {
+          container.classList.add('active');
+          button.classList.add('active');
+          container.style.height = 'auto';
+
+          let height = container.clientHeight + "px";
+
+          container.style.height = '0px';
+
+          setTimeout(function () {
+              container.style.height = height;
+          }, 0);
+      } else {
+          container.style.height = '0px';
+
+          container.addEventListener('transitionend', function () {
+              container.classList.remove('active');
+              button.classList.remove('active');
+          }, {
+              once: true
+          });
       }
     },
-    navFunctions(){
-      /*
-        Slidemenu
-      */
-      (function() {
-        var $body = document.body
-        , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
-
-        if ( typeof $menu_trigger !== 'undefined' ) {
-          $menu_trigger.addEventListener('click', function() {
-            $body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
-          });
-        }
-
-      }).call(this);
-    },
-    buttonWaiting(e){
-      console.log('button clicked');
-      let thisButton = e.target;
-      thisButton.innerHTML = '<i class="zmdi zmdi-chart-donut rotating"></i>';
-      //thisButton.setAttribute('disabled','disabled');
-    }
+    
   }
 })
 /* eslint-enable */

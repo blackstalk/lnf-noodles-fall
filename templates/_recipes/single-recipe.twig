@@ -1,0 +1,72 @@
+{% extends "_layout" %}
+{% block main %}
+<section class="recipe-hero">
+    <div class="hero-left" style="background-image:url(/{{ entry.recipeImage.one().url }})">
+        <figure>
+            <img src="/{{ entry.recipeImage.one().url }}" alt="{{ entry.title }}" />
+        </figure>
+    </div>
+    <div class="hero-right" style="background-image:url(/{{ globals.darkBackgroundImage.one().url }})">
+        <div class="hero-right--inner">
+            <h1>{{ entry.title }}</h1>
+            <p>{{ entry.recipeDescription }}</p>
+            <div class="hero-right--info">
+                <ul>
+                    <li>
+                        <span class="info-icon prep"></span>
+                        <span class="info-label">Prep Time</span>
+                        <span class="info-value">{{ entry.prepTime }}</span>
+                    </li>
+                    <li>
+                        <span class="info-icon cook"></span>
+                        <span class="info-label">Cook Time</span>
+                        <span class="info-value">{{ entry.cookTime }}</span>
+                    </li>
+                    <li>
+                        <span class="info-icon total"></span>
+                        <span class="info-label">Total Time</span>
+                        <span class="info-value">{{ entry.totalTime }}</span>
+                    </li>
+                    <li>
+                        <span class="info-icon serves"></span>
+                        <span class="info-label">Serves</span>
+                        <span class="info-value">{{ entry.servings }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="body">
+    <div class="body-left">
+        <div class="body-left--heading">
+            <h2>How To Make it:</h2>
+        </div>
+        <div class="body-left--instructions">
+            {{ entry.instructions }}
+        </div>
+        <div class="body-left--tip">
+            <h3>- Tip -</h3>
+            <p>{{ entry.recipeTip|raw }}</p>
+        </div>
+    </div>
+    <div class="body-right">
+        <div class="body-right--heading">
+            <h2>Ingredients</h2>
+        </div>
+        <div class="body-right--ingredients">
+            {{ entry.ingredients }}
+        </div>
+        <div class="body-right--heading">
+            <h2>Made With:</h2>
+            <a href="{{ entry.relatedProduct.one().url }}">
+                <img src="/{{ entry.relatedProduct.one().productImage.one().url }}" alt="{{ entry.relatedProduct.one().title }}" />
+                <label>{{ entry.relatedProduct.one().title }}</label>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="yellow-bar" style="background-image:url(/{{ globals.yellowBg.one().url }})">
+    <a href="/">Back to all recipes</a>
+</section>
+{% endblock %}

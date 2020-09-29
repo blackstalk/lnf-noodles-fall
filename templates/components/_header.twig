@@ -1,22 +1,14 @@
 <!-- Navigation -->
-<nav class="slide-menu" id="slide-menu">
-	<ul>
-		<li class="timeline"><a href="#">Navigation</a></li>
-		<li class="events">
-			<span class="slide-menu--reservations-title"><a href="/pasta">Products</span>
-			<ul class="slide-menu--reservations">
-				<li>Shape
-					<ul>
-						<li>Long Pasta</li>
-						<li>Short Pasta</li>
-					</ul>
-				</li>
-				<li>Type</li>
-				<li>Collection</li>
-			</ul>
-		</li>
-		{# <li class="calendar">Create A Skedule</li> #}
-		<li class="sep settings"><a href="/products">All Products</a></li>
-		{# <li class="logout">Logout</li> #}
-	</ul>
+{% if entry.section == 'Recipes' %}
+<nav class="dark-nav" style="background-image:url(/{{ globals.darkBackgroundImage.one().url }})">
+{% else %}
+<nav>
+{% endif %}
+
+    <figure>
+        <img alt="Logo" src="/{{ globals.logo.one().url }}" />
+    </figure>
+    {% if entry.section == 'Recipes' %}
+        <a href="/">Back to all recipes</a>
+    {% endif %}
 </nav>

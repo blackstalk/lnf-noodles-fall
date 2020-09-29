@@ -56,7 +56,7 @@
 	</head>
 	<body>
 
-		<div id="app" class="{% if currentUser %}logged-in{% endif %}">
+		<div id="app" class="app">
 
 			{# HEADER #}
 			<header role="banner">
@@ -68,17 +68,14 @@
 			{# MAIN #}
 			<main role="main">
 			<!-- Content panel -->
-				<div id="content" class="cover bg-left bg-center-l {% if entry.uri == "__home__" or entry.uri == "login" or entry.uri == "sign-up" or entry.uri == "reserve" or entry.uri == "remove-reservation" %}home-container{% endif %}">
-					{% include 'components/_navbar.twig' %}
+				<div id="content">
 					{% block main %}{% endblock %}
 				</div>
 				
 			</main>
 
 			{# FOOTER #}
-			<footer role="contentinfo">
-				{% block footer %}{% endblock %}
-			</footer>
+			{% include 'components/_footer.twig' %}
 
 		</div>
 

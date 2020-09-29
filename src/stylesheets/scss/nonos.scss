@@ -1,0 +1,15 @@
+/* DO NOT DO THIS, JUST TO MEET DEADLINE */
+/* DO NOT DO A LOT OF PRACTICES IN THIS APP, BUILT THIS WAY DUE TO TIME CONTSTAINTS */
+@include mediaMaxWidth(650){
+    h1 {
+        font-size: 24px !important;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 22px !important;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px !important;
+    }
+}
