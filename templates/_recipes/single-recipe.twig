@@ -59,7 +59,7 @@
         </div>
         <div class="body-right--heading">
             <h2>Made With:</h2>
-            <a href="{{ entry.relatedProduct.one().url }}">
+            <a href="{{ entry.relatedProduct.one().productUrl }}">
                 <img src="/{{ entry.relatedProduct.one().productImage.one().url }}" alt="{{ entry.relatedProduct.one().title }}" />
                 <label>{{ entry.relatedProduct.one().title }}</label>
             </a>
