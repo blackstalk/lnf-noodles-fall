@@ -58,7 +58,7 @@
 	<div class="recipes-grid">
 		<div class="recipe-row">
 			{% for recipe in craft.entries.section('recipes').all() %}
-				<div class="recipe-col" style="background-image:url('{{ entry.heroTexture.one().url }}')">
+				<div class="recipe-col" style="background-image:url('{{ globals.darkBackgroundImage.one().url }}')">
 					<div class="recipe-outer">
 						<div class="recipe-item">
 							<a href="{{ recipe.url }}" class="recipe-img" style="background-image:url({{ recipe.recipeImage.one().url }})"></a>
@@ -78,7 +78,7 @@
 	</div>
 	<div class="recipes-garnish"><img alt="Garnish" src="{{ entry.headerBarSupportingImage.one().url }}" /></div>
 </section>
-<section class="info" style="background-image:url('{{ entry.heroTexture.one().url }}')">
+<section class="info" style="background-image:url('{{ globals.darkBackgroundImage.one().url }}')">
 	<div class="info-container">
 		<div class="info-left">
 			<div class="info-left--heading">
@@ -98,9 +98,11 @@
 			</div>
 		</div>
 	</div>
+	{% if entry.fpoButtonBg.one().url is not empty %}
 	<div class="info-button">
 		<a style="background-image:url({{ entry.fpoButtonBg.one().url }})" href="{{ entry.fpoButtonLink }}">See Our Products</a>
 	</div>
+	{% endif %}
 	<div class="info-bottom-garnish"><img alt="Garnish" src="{{ entry.headerBarSupportingImage.one().url }}" /></div>
 </section>
 
@@ -113,9 +115,9 @@
 				<div class="product-col">
 					<div class="product-outer">
 						<div class="product-item">
-							<a href="{{ product.url }}" class="product-img" style="background-image:url({{ product.productImage.one().url }})"></a>
+							<a href="{{ product.productUrl }}" class="product-img" style="background-image:url({{ product.productImage.one().url }})"></a>
 							<div class="product-info">
-								<a href="{{ product.url }}">
+								<a href="{{ product.productUrl }}">
 									{{ product.title }}
 								</a>
 								{{ product.productDescription }}
