@@ -42,6 +42,25 @@ section.recipe-hero {
                 font-family: "SpartanRegular";
                 margin: 30px 0;
             }
+            button {
+                display: flex;
+                background-size: contain;
+                background-repeat: repeat;
+                color: black;
+                font-size: 12px;
+                font-family: "SpartanBold";
+                padding: 5px 20px;
+                text-transform: uppercase;
+                border: 0;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 25px;
+                cursor: pointer;
+                outline: 0;
+                span {
+                    margin-right: 10px;
+                }
+            }
             .hero-right--info {
                 border-top: 1px solid rgba(255, 255, 255, 0.5);
                 padding-top: 25px;
@@ -309,5 +328,26 @@ section.yellow-bar {
         @include mediaMaxWidth(800){
             font-size: 20px;
         }
+    }
+}
+@media print {
+    nav.dark-nav a,
+    section.recipe-hero .hero-right .hero-right--inner button,
+    section.recipe-hero .hero-right .hero-right--inner .hero-right--info ul li .info-icon,
+    section.yellow-bar,
+    .body-right--product,
+    footer
+    {
+        display: none;
+    }
+    section.recipe-hero .hero-left figure img
+    {
+        visibility: visible;
+    }
+    nav.dark-nav {
+        position: absolute;
+    }
+    section.body {
+        padding-top: 0;
     }
 }

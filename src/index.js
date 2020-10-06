@@ -24,6 +24,9 @@ new Vue({
     console.log('mounted');
   },
   methods: {
+    printPage(){
+      window.print();
+    },
     toggleHeroCopy(){
       let button = document.querySelector('.hero-read-more');
       let container = document.querySelector('.toggle-container');

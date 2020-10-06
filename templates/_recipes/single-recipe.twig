@@ -10,6 +10,7 @@
         <div class="hero-right--inner">
             <h1>{{ entry.title }}</h1>
             <p>{{ entry.recipeDescription }}</p>
+            <button v-on:click="printPage" style="background-image:url(/{{ globals.yellowBg.one().url }})"><span class="material-icons">print</span> Print Recipe</button>
             <div class="hero-right--info">
                 <ul>
                     <li>
@@ -57,7 +58,7 @@
         <div class="body-right--ingredients">
             {{ entry.ingredients }}
         </div>
-        <div class="body-right--heading">
+        <div class="body-right--heading body-right--product">
             <h2>Made With:</h2>
             <a href="{{ entry.relatedProduct.one().productUrl }}">
                 <img src="/{{ entry.relatedProduct.one().productImage.one().url }}" alt="{{ entry.relatedProduct.one().title }}" />
