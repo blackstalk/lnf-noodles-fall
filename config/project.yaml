@@ -1,4 +1,4 @@
-dateModified: 1601411027
+dateModified: 1602619656
 email:
   fromEmail: philipp@rppld.co
   fromName: 'Craft CMS Project Starter'
@@ -304,6 +304,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  4d29b815-5c13-4b23-8b09-178b9ce54a36:
+    contentColumnType: text
+    fieldGroup: ad07ebe9-076c-45fc-905a-ce7123e08282
+    handle: bodyScripts
+    instructions: ''
+    name: 'Body Scripts'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: '1'
+      columnType: null
+      initialRows: '8'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   5281fd05-027f-4cfa-8b70-12b5759309d2:
     contentColumnType: string
     fieldGroup: f63ad89a-254d-4d4b-86c6-d73a3e689519
@@ -369,6 +387,24 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  69a9eaa7-5caa-4d3d-9966-ba8a32be6020:
+    contentColumnType: text
+    fieldGroup: ad07ebe9-076c-45fc-905a-ce7123e08282
+    handle: headScripts
+    instructions: ''
+    name: 'Head Scripts'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: '1'
+      columnType: null
+      initialRows: '8'
+      multiline: '1'
       placeholder: ''
     translationKeyFormat: null
     translationMethod: none
@@ -914,6 +950,16 @@ globalSets:
                 sortOrder: 2
             name: Identity
             sortOrder: 1
+          -
+            fields:
+              4d29b815-5c13-4b23-8b09-178b9ce54a36:
+                required: false
+                sortOrder: 2
+              69a9eaa7-5caa-4d3d-9966-ba8a32be6020:
+                required: false
+                sortOrder: 1
+            name: Scripts
+            sortOrder: 2
     handle: globals
     name: Globals
 plugins:
